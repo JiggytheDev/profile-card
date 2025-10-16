@@ -6,9 +6,7 @@ This project displays a user’s profile information including their avatar, nam
 ---
 
 ## 📸 Preview
-![Profile Card Screenshot](/assets/screenshot(497).png)
-
-*(Replace `screenshot.png` with your actual screenshot filename.)*
+![Profile Card Screenshot](./assets/Screenshot(497).png)
 
 ---
 
