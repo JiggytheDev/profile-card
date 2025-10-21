@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: #f0f2f5;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    margin: 15px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name-link {
+    font-size: 29px;
+    font-weight: bold;
+    text-align: center;
+    animation: pop-up 8.9s infinite;
+}
+
+.name-link:hover {
+    text-decoration: underline;
+}
+
+@keyframes pop-up {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    70% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 10px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul li {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: rgb(97, 152, 168);
+    width: 100%;
+}
+
+a:hover {
+    color: rgb(33, 63, 63);
+}
+
+nav ul li:nth-child(1) {
+    text-align: start;
+}
+
+nav ul li::after {
+    position: absolute;
+    content: "";
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    height: 100%;
+    right: 5%;
+}
+
+nav ul li:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.hobbies {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.hobbies ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f2f5;
+    border-radius: 14px;
+}
+
+.hobbies h3 {
+    padding: 5px;
+}
+
+
+
+
+
+
+
+

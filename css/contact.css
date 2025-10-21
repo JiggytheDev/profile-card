@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(148, 38%, 91%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.clientName {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid grey;
+}
+
+input:hover {
+    border: 1px solid rgba(128, 128, 128, 0.247);
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.692);
+}
+
+button {
+    padding: 10px;
+    border-radius: 8px;
+    background: hsl(169, 82%, 27%);
+    border: none;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsla(169, 82%, 27%, 0.774);
+}
+
+#userMessage {
+    height: 13vh;
+}
+
+.success {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: -300px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: hsl(187, 24%, 22%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.6s ease-in-out;
+    color: #fff;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    justify-content: center;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.success.show {
+    right: 20px;
+}
+
+.sent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.success p {
+    color: #fff;
+}
+
+p {
+    color: red;
+}
+
+@media(max-width: 767px) {
+    .clientName {
+        flex-direction: column;
+    }
+}
+
