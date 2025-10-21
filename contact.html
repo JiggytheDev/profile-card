@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section data-testid="test-contact-page" class="container">
+        <h1>Contact Us</h1>
+        <section class="clientName" data-testid="test-contact-name">
+            <form id="firstName" data-testid="test-user-firstname">
+                <label for="userFirstName">First Name</label>
+                <input type="text" id="userFirstName" autocomplete="off">
+                <p class="firstnameerror"></p>
+            </form>
+            <form id="lastName" data-testid="test-user-lastname">
+                <label for="userLastName">Last Name</label>
+                <input type="text" id="userLastName" autocomplete="off">
+                <p class="lastnameerror"></p>
+            </form>
+        </section>
+        <section class="clientEmail" data-testid="test-contact-email">
+            <form id="email">
+                <label for="userEmail">Email Address</label>
+                <input type="text" id="userEmail" autocomplete="off">
+                <p class="emailerror"></p>
+            </form>
+        </section>
+        <section class="clientSubject" data-testid="test-contact-subject">
+            <form id="subject">
+                <label for="userSubject">Subject</label>
+                <input type="text" id="userSubject" autocomplete="off">
+                <p class="subjecterror"></p>
+            </form>
+        </section>
+        <section class="clientMessage" data-testid="test-contact-message">
+            <form id="message">
+                <label for="userMessage">Message</label>
+                <input type="text" autocomplete="off" id="userMessage">
+                <p class="messageerror"></p>
+            </form>
+        </section>
+        <button id="submitData" data-testid="test-contact-submit">Submit</button>
+        <p class="fill"></p>
+    </section>
+
+    <div class="success" id="success">
+        <div class="sent">
+            <img src="assets/icon-success-check.svg" alt="checked">
+            <h3>Message Sent!</h3>
+        </div>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
